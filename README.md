@@ -1,4 +1,4 @@
-## ZIPImageViwer
+## ZIPImageViewer
 
 ### Web Application for Viewing ZIP File Contents (Images Only)
 1. Select a Folder: Navigate to the desired folder to display available ZIP files.
