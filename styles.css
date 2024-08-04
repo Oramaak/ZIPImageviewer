@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(53, 53, 53);
+}
+
+#sidebar {
+    width:30vw;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease; 
+}
+
+#sidebar.minimized {
+    width: 50px;
+}
+
+#toggleButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    align-self: flex-end;
+}
+
+#fileListContainer {
+    margin-top: 20px;
+    text-align: left;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+#fileList {
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#fileList li {
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#fileList li:hover {
+    background-color: #e0e0e0;
+}
+
+#mainContent {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    width: 80vmax; 
+    overflow: auto; 
+}
+
+#popup {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 20px;
+    text-align: center;
+}
+
+#popup img {
+    max-width: 90vw;
+    max-height: 80vh;
+}
+
+#popupClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#prevButton, #nextButton {
+    margin: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.photo{
+    margin: 5px;
+}
+
+#folderNavigation {
+    max-height: 200px; 
+    overflow-y: auto; 
+    margin-bottom: 10px;
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    background-color: rgb(227, 223, 255);
+}
+
+.folder-button {
+    display: block; 
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center; 
+}
+
+.folder-button.active {
+    background-color: #00438b; 
+}
+
+.folder-separator {
+    border-top: 2px solid #ddd;
+    margin: 10px 0;
+}
