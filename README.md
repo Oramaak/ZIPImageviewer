@@ -5,6 +5,6 @@
 2. Choose a ZIP File: Select a ZIP file to view its contents.
 3. View Images: The images within the selected ZIP file will be displayed.
 
-> https://iojayau.github.io/ZIPImageviewer/
+> https://oramaak.github.io/ZIPImageviewer/
 
 #### This web application works locally and cannot upload any file.
